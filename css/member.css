@@ -99,3 +99,62 @@ svg:hover{
 }
 
 
+.profile-card {
+  border: 2px solid #d63c3c;
+  margin-bottom: 40px;
+  padding: 20px;
+  max-width: 100%;  
+  clip-path: polygon(100% 0, 100% 72%, 87% 100%, 0 100%, 0 0);
+  backdrop-filter: blur(5px);
+}
+
+.profile-header {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-details {
+  width: 60%;
+}
+
+.profile-details h2 {
+  background-color: #d63c3c;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.profile-details .details {
+  background-color: black;
+  padding: 10px;
+  border: 2px solid #d63c3c;
+  font-size: 14px;
+}
+
+.profile-details .details p {
+  margin: 10px 0;
+}
+
+.profile-photo {
+  width: 30dvw;
+  height: fit-content;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid #d63c3c;
+  clip-path: polygon(100% 0, 100% 72%, 87% 100%, 0 100%, 0 0);
+}
+
+.profile-photo img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: auto;
+}

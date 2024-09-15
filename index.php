@@ -124,7 +124,7 @@
                         </button>
                         <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter"
                             onclick="(function(){window.location.href='https://ctfd.uctf.ir'})();">
-                            <h4>Jion </h4>
+                            <h4>Join </h4>
                         </button>
                     </div>
                 </div>
