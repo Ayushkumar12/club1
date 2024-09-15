@@ -97,7 +97,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <h1 class="display-1 bold color_white content__title">CyberZero Club<span
+                        <h1 class="display-1 bold color_white content__title"><span style="color: #ef121b;">CyberZero</span> Club<span
                                 class="vim-caret">&nbsp;</span></h1>
                         <!-- <h1 class="display-3 bold color_white content__title2">Club</h1> -->
                     </div>
@@ -118,13 +118,11 @@
                     </div>
 
                     <div class="col-lg-12">
-                        <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter"
-                            onclick="(function(){window.location.href='https://ctfd.uctf.ir'})();">
-                            <h4>About Us</h4>
+                        <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter">
+                            <h4><a href='About'>About Us</a></h4>
                         </button>
-                        <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter"
-                            onclick="(function(){window.location.href='https://ctfd.uctf.ir'})();">
-                            <h4>Join </h4>
+                        <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter">
+                            <h4>Join</h4>
                         </button>
                     </div>
                 </div>

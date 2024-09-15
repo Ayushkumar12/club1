@@ -18,36 +18,36 @@
 .bio {
   font-weight: 200;
   margin-bottom: 1.75rem;
-  display: none;
 }
 /* for founder */
 .card1{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 90vw;
+  width: 90vw;
   margin: 60px;
   max-width: 100%;
   padding: 50px 30px 50px 20px;
-  background-color: #ef121b;
+  background-color: #ef121b54;
+  backdrop-filter: blur(20px);
   color: whitesmoke;
   border-radius: 24px;
 }
 /* for member */
 .card2{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 75vw;
+  width: 75vw;
   margin: 60px;
-  /* max-width: 500px; */
+  max-width: 550px;
   padding: 50px 30px 50px 20px;
-  background-color: #03045e;
+  background-color: #ef121b54;
+  backdrop-filter: blur(20px);
   color: whitesmoke;
   border-radius: 24px;
 }
-.img1{
+.img{
   max-width: 280px;
   width: 28vw;
   height: 300px;
@@ -58,19 +58,8 @@
   border-radius: inherit;
   box-shadow: 2px 2px 40px black;
 }
-.img{
-  max-width: 280px;
-  width: 28vw;
-  height: 300px;
-  object-fit: cover;
-  object-position: top;
-  margin-top: -60px;
-  margin-bottom: 30px;
-  border-radius: inherit;
-  box-shadow: 2px 2px 40px black;
-}
 @media only screen and (max-width: 480px) {
-  .card{
+  .card2{
     flex-direction: column;
     text-align: center;
     margin: 40px 20px 40px 20px;
@@ -96,65 +85,4 @@
 }
 svg:hover{
   filter: drop-shadow(0px 0px 10px white);
-}
-
-
-.profile-card {
-  border: 2px solid #d63c3c;
-  margin-bottom: 40px;
-  padding: 20px;
-  max-width: 100%;  
-  clip-path: polygon(100% 0, 100% 72%, 87% 100%, 0 100%, 0 0);
-  backdrop-filter: blur(5px);
-}
-
-.profile-header {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-.profile-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.profile-details {
-  width: 60%;
-}
-
-.profile-details h2 {
-  background-color: #d63c3c;
-  padding: 10px;
-  font-size: 18px;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.profile-details .details {
-  background-color: black;
-  padding: 10px;
-  border: 2px solid #d63c3c;
-  font-size: 14px;
-}
-
-.profile-details .details p {
-  margin: 10px 0;
-}
-
-.profile-photo {
-  width: 30dvw;
-  height: fit-content;
-  object-fit: cover;
-  object-position: top;
-  border: 2px solid #d63c3c;
-  clip-path: polygon(100% 0, 100% 72%, 87% 100%, 0 100%, 0 0);
-}
-
-.profile-photo img {
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  height: auto;
 }

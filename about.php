@@ -89,7 +89,6 @@
         swiper-container{
             width: 100dvw;
             object-fit: cover;
-            height: 100dvh;
             position: absolute;
             top: 0%;
             left: 0%;
@@ -99,7 +98,7 @@
             width: 100dvw;
             filter: opacity(0.5);
             object-fit: cover;
-            height: 100dvh;
+            height: 60%;
         }
         .slidetext{
             width: 100dvw;
@@ -157,7 +156,7 @@
     </a>
 
     <section>
-        <div class="relative container mx-auto flex flex-col px-5 py-8 md:flex-row items-center">
+        <div class="relative container flex flex-col px-5 py-8 md:flex-row items-center">
             <div class="w-full sm:w-1/2 mt-30 flex justify-center">
                 <img data-aos="zoom-in-right" src="assets/member/Anmol3.webp" alt="anmol" class="img rounded-full ">
             </div>
