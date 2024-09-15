@@ -90,6 +90,9 @@
                 <a href="members" class="text-white hover:underline">
 				    <span>Members</span>
                 </a>
+                <a href="about" class="text-white hover:underline">
+                    <span>About us</span>
+                </a>
             </ul>
             <?php if (isset($_SESSION['token']) || isset($_SESSION['loggedin'])): ?>
                 <div class="lg:block hidden relative text-left dropdown">
@@ -166,7 +169,16 @@
 
     <aside id="sidebar"
         class="z-50 w-60 fixed bg-gray-950 min-h-full shadow-xl px-3 overflow-x-hidden transition-transform transform -translate-x-full duration-300 ease-in-out">
-        
+        <div class="mt-10 mb-6 text-white text-center">
+                <a href="auth/sign-in"
+                    class="mx-auto w-20 h-20 rounded-full text-white border-gray-200 flex items-center justify-center transition duration-150 ease-in-out border hover:text-purple-800 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 15">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 7.5h11m0 0L8 3.786M12 7.5l-4 3.714M12 1h3c.53 0 1.04.196 1.414.544.375.348.586.82.586 1.313v9.286c0 .492-.21.965-.586 1.313A2.081 2.081 0 0 1 15 14h-3" />
+                    </svg>
+                </a>
+                <span>Sign-In</span>
+            </div>
         <div id="menu" class="flex flex-col space-y-2">
             <?php if (isset($_SESSION['token']) || isset($_SESSION['loggedin'])): ?>
                 <a href="auth/sign-in"
@@ -220,6 +232,16 @@
                     </path>
                 </svg>
                 <span class="">Members</span>
+            </a>
+            <a href="about.php"
+                class="text-sm font-medium text-white py-2 px-2 hover:bg-gray-300 hover:text-purple-800 hover:scale-105 rounded-md transition duration-150 ease-in-out">
+                <svg class="w-6 h-6 fill-current inline-block" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
+                    </path>
+                </svg>
+                <span class="">About us</span>
             </a>
             <?php if (isset($_SESSION['token']) || isset($_SESSION['loggedin'])): ?>
                 <a href="logout.php"

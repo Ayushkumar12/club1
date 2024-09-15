@@ -16,7 +16,7 @@
 
 <body class="bg-gray-950">
     <!-- about us  -->
-    <section class="text-gray-600 body-font">
+    <!-- <section class="text-gray-600 body-font">
         <div class="relative container flex flex-col-reverse py-8 md:flex-row items-center ">
             <div data-aos='zoom-in-right'
                 class="slidetext">
@@ -42,13 +42,13 @@
                 </swiper-slide>
                 <swiper-slide class='rounded-[20px]'><img src="assets/slider/3.webp" alt="" class='rounded-20'>
                 </swiper-slide>
-                <!-- <swiper-slide><img src="assets/slider/4.jpeg" alt="" class='rounded-20'></swiper-slide> -->
+                <swiper-slide><img src="assets/slider/4.jpeg" alt="" class='rounded-20'></swiper-slide>
                 <swiper-slide class='rounded-[20px]'><img src="assets/slider/5.jpeg" alt=""></swiper-slide>
             </swiper-container>
 
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    </section>
+    </section> -->
     <style>
         .well {
             filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
@@ -156,6 +156,10 @@
     </a>
 
     <section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div class="relative container flex flex-col px-5 py-8 md:flex-row items-center">
             <div class="w-full sm:w-1/2 mt-30 flex justify-center">
                 <img data-aos="zoom-in-right" src="assets/member/Anmol3.webp" alt="anmol" class="img rounded-full ">

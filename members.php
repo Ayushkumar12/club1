@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/member.css" />
-    <!-- <script src="js/read.js"></script> -->
+    <script src="js/read.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -41,12 +41,14 @@
         <div style="position: fixed;" class="glitch__img"></div>
         <div style="position: fixed;" class="glitch__img"></div>
     </div>
+      <br/>
+      <br/>
     <div class="jumbotron">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
             <h1 class="display-1 bold color_white content__title text-center">
-              <span class="color_danger">Mem</span>bers<span class="vim-caret"
+              <span class="color_danger">Mem</span>bers<span class="vim-caret sp"
                 >&nbsp;</span
               >
             </h1>
@@ -67,8 +69,9 @@
                   <div data-aos="fade-right" class="info">
                     <h2 class="name">Mr. Anmol Kumar</h2>
                     <h3 class="title">Founder</h3>
-                    <p class="bio1">
-                      Hello I’m Anmol Kumar ,the Founder of cyberZero.club our
+                    <p class="bio1" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
+                      x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
+                      <span x-text="show ? text : content">Hello I’m Anmol Kumar ,the Founder of cyberZero.club our
                       community focused on raising awareness about cybersecurity
                       and promoting a safe digital environment. this journey to
                       protect ourselves and our digital future! I’m incredibly
@@ -77,7 +80,9 @@
                       Cyber Criminologist, Digital Forensics Investigator, Cyber
                       Crime Investigator, and Cyber Security Researcher. I'm
                       also a Full Stack Developer Officer with expertise in
-                      network security and computer networks.
+                      network security and computer networks.</span>
+                      <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
+                      x-text="show ? 'show less' : '..read more'"></button>
                     </p>
                     <div class="social flex justify-center mt-3 -mx-2">
                       <a
@@ -86,7 +91,7 @@
                         aria-label="Reddit"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +108,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +125,7 @@
                         aria-label="Github"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +160,7 @@
                     <div class="flex justify-center mt-3 -mx-2">
                       <a href="#" class="mx-2" aria-label="Reddit">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +173,7 @@
 
                       <a href="#" class="mx-2" aria-label="Facebook">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +186,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +223,7 @@
                         aria-label="Linkedin"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +240,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +253,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -351,7 +356,7 @@
                         aria-label="Reddit"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -368,7 +373,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +389,7 @@
                         aria-label="Github"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -417,7 +422,7 @@
                     <div class="flex justify-center mt-3 -mx-2">
                       <a href="#" class="mx-2" aria-label="Reddit">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -430,7 +435,7 @@
 
                       <a href="#" class="mx-2" aria-label="Facebook">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -443,7 +448,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -480,7 +485,7 @@
                         aria-label="Reddit"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -496,7 +501,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -509,7 +514,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -543,7 +548,7 @@
                         aria-label="Reddit"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -556,7 +561,7 @@
 
                       <a href="#" class="mx-2" aria-label="Facebook">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -573,7 +578,7 @@
                         aria-label="Github"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -605,7 +610,7 @@
                     <div class="flex justify-center mt-3 -mx-2">
                       <a href="#" class="mx-2" aria-label="Reddit">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -618,7 +623,7 @@
 
                       <a href="#" class="mx-2" aria-label="Facebook">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -631,7 +636,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -663,7 +668,7 @@
                     <div class="flex justify-center mt-3 -mx-2">
                       <a href="#" class="mx-2" aria-label="Reddit">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -680,7 +685,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -693,7 +698,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -709,7 +714,7 @@
                 <div data-aos="zoom-in-up" class="card2">
                   <img
                     data-aos="fade-left"
-                    src="assets/member/uday.webp"
+                    src="assets/member/udhay.jpeg"
                     alt="udhay"
                     class="img"
                   />
@@ -729,7 +734,7 @@
                         aria-label="Reddit"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -746,7 +751,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -758,7 +763,7 @@
                       </a>
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -785,7 +790,7 @@
                     <div class="flex justify-center mt-3 -mx-2">
                       <a href="#" class="mx-2" aria-label="Reddit">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -802,7 +807,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -815,7 +820,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -842,7 +847,7 @@
                     <div class="flex justify-center mt-3 -mx-2">
                       <a href="#" class="mx-2" aria-label="Reddit">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -859,7 +864,7 @@
                         aria-label="Facebook"
                       >
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -872,7 +877,7 @@
 
                       <a href="#" class="mx-2" aria-label="Github">
                         <svg
-                          class="w-6 h-6 fill-current"
+                          class="w-6 h-6 fill-white"
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"

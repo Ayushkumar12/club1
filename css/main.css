@@ -464,6 +464,7 @@ input[type="radio"].toggle:checked+label {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .glitch__img_leaderboard {
     position: fixed !important;
     background: url(../images/bg--world.webp) !important;
@@ -915,4 +916,16 @@ span.fail:after {
 
 .spons{
     padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .glitch__img{
+        background-position-x: -425px;
+    }
+    .cyber1{
+        font-size: 3.5rem;
+    }
+    .sp{
+        display: none;
+    }
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/member.css" />
-    <!-- <script src="js/read.js"></script> -->
+    <script src="js/read.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -41,10 +41,12 @@
         <div style="position: fixed;" class="glitch__img"></div>
     </div>
     <br />
+    <br />
+    <br />
 
     <section class="text-gray-600 " style="position: relative; margin-top: 20px;">
       <h1 class="display-1 bold color_white content__title text-center">
-      <span class="color_danger">Men</span>tors<span class="vim-caret">&nbsp;</span>
+      <span class="color_danger">Men</span>tors<span class="vim-caret sp">&nbsp;</span>
       </h1>
       <br />
       <br />
