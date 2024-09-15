@@ -40,9 +40,16 @@
         <div style="position: fixed;" class="glitch__img"></div>
         <div style="position: fixed;" class="glitch__img"></div>
     </div>
-    <section class="text-gray-600 z-10">
+    <br />
+
+    <section class="text-gray-600 " style="position: relative; margin-top: 20px;">
+      <h1 class="display-1 bold color_white content__title text-center">
+      <span class="color_danger">Men</span>tors<span class="vim-caret">&nbsp;</span>
+      </h1>
+      <br />
+      <br />
       <div class="flex flex-col md:flex-row">
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
           <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/geeta.png" alt="photo">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Dean of School</h2>
@@ -59,71 +66,7 @@
             </p>
           </div>
         </div>
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets\images\Gurwinder Singh.png"
-            alt="photo">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-              Head Of Department</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Dr. Gurwinder Singh</h1>
-            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
-              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
-              <span x-text="show ? text : content">Gurwinder Singh (gurwinder.singh@niu.edu.in) received his BA in
-                computer application, MCA, M.Phil., and a Ph.D. degree in computer science from Punjabi University, India,
-                in 2008, 2011, 2014, 2016, and 2023, respectively. In 2014, he joined the Creative-i Technologies
-                Education and Development Centre, in India, in 2015 to joined the Department of Computer Science at Jasdev
-                Singh Sandhu Degree College, India, in 2016 to join the Department of Computer Science at Sri Guru Teg
-                Bahadur Khalsa College, Shri Anandpur Sahib, in 2017 to join the Department of Computer Science at Punjabi
-                University, India and in 2022, he join the university institute of computing, Chandigarh University, India
-                and since 2024, he joined the Department of Computer Science, School of Sciences, Noida International
-                University, India. He achieved Young Scientist Award at the 11th National Conference on RACES-2023,
-                Multani Mal Modi College, India, he has achieved the Best patent idea presentation award at Chitkara
-                University, Himachal Pradesh, India, and also get best publication awards at conferences. His research
-                interest includes remote sensing, and digital image processing, in particular, agriculture land use
-                classification, machine learning, and deep learning. He is also a member of ISPRS and ISRS.</span>
-              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
-                x-text="show ? 'show less' : '..read more'"></button>
-            </p>
-  
-          </div>
-        </div>
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/deepaka.jpg" alt="photo">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Coordinator</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Dr. Deepka Sharma</h1>
-            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
-              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
-              <span x-text="show ? text : content">Dr. Deepika Sharma have spent years researching and studying the art of
-                motivation, and thrilled to share her knowledge and expertise with us. She has good knowledge in
-                Computer applications like Image processing, forensics, Image Forgery, software Project Management and
-                database management system..</span>
-              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
-                x-text="show ? 'show less' : '..read more'"></button>
-            </p>
-  
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col md:flex-row">
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/hod.jpg" alt="photo">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-              Mentor</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Prof. (Dr.) Sandeep Mathur</h1>
-            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
-              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
-              <span x-text="show ? text : content">A dynamic and energetic individual having 19+ years of experience with
-                multiple skill sets. Published many Research papers in various reputed Scopus/SCI indexed journals.
-                Contributed to different academics team. Specialties in: Data analytics Research Campus recruitment IT
-                recruitments and talent acquisition Higher Education Corporate Training Entrepreneurship Mentor.</span>
-              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
-                x-text="show ? 'show less' : '..read more'"></button>
-            </p>
-          </div>
-        </div>
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
           <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/Alok.png" alt="photo">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Mentor</h2>
@@ -142,8 +85,64 @@
             </p>
           </div>
         </div>
-        
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
+          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/deepaka.jpg" alt="photo">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Coordinator</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Dr. Deepka Sharma</h1>
+            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
+              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
+              <span x-text="show ? text : content">Dr. Deepika Sharma have spent years researching and studying the art of
+                motivation, and thrilled to share her knowledge and expertise with us. She has good knowledge in
+                Computer applications like Image processing, forensics, Image Forgery, software Project Management and
+                database management system..</span>
+              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
+                x-text="show ? 'show less' : '..read more'"></button>
+            </p>
+  
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row">
+      <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
+          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/Neelam.png" alt="photo">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Mentor</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Ms. Neelam Gupta</h1>
+            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
+              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
+              <span x-text="show ? text : content">Neelam Gupta is an Assistant Professor at School of Science (SOS), 
+              Noida International University, Yamuna Expy, Sector 17A, Uttar Pradesh, India. She has a bachelor’s degree in
+              computer applications from CCSU, Meerut (UP).  She has completed her post-graduation in Master of Computer Applications 
+              from AKTU, Lucknow (UP) and Ph.D. in (IT) from Amity University, Noida, Uttar Pradesh. She has one years of teaching and 
+              research experience. Her area of research includes Software Defined Networking (SDN),
+              Blockchain, Internet of Things, Networking, and security.
+              With deep interest in the field of computer science, she has a penchant for teaching IT Subjects.  Her core areas of interest lie 
+              in Knowledge Management, Learning Analytics, Information Systems.  She has publications in various international and national journals of repute.  </span>
+              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
+                x-text="show ? 'show less' : '..read more'"></button>
+            </p>
+          </div>
+        </div>
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
+          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/nija.jpg" alt="photo">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Mentor</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Dr. Nija Mani</h1>
+            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
+              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
+              <span x-text="show ? text : content">Dr. Nija Mani As an educator, I find profound fulfilment in helping
+                students unlock the mysteries of numbers, equations, and the beauty that lies within ,mathematical
+                concepts. I have the privilege of guiding students through the fascinating journey of mathematical
+                discovery. I'm always eager to connect with fellow educators, students, or anyone passionate about the
+                transformative power of mathematics education.</span>
+              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
+                x-text="show ? 'show less' : '..read more'"></button>
+            </p>
+  
+          </div>
+        </div>
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
           <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/Dr. Rashmi Dahiya.jpg"
             alt="photo">
           <div class="p-6">
@@ -163,7 +162,7 @@
         </div>
       </div>
       <div class="flex flex-col md:flex-row">
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
           <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/gagan sir.jpg" alt="photo">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Mentor</h2>
@@ -181,7 +180,7 @@
             </p>
           </div>
         </div>
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
           <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/hassan.jpg" alt="photo">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
@@ -200,7 +199,7 @@
   
           </div>
         </div>
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" style="backdrop-filter: blur(20px)">
           <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/Dr. Saurabh Kumar.jpg"
             alt="photo">
           <div class="p-6">
@@ -223,44 +222,7 @@
         </div>
       </div>
       <div class="flex flex-col md:flex-row justify-evenly">
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/Neelam.png" alt="photo">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Mentor</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Ms. Neelam Gupta</h1>
-            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
-              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
-              <span x-text="show ? text : content">Neelam Gupta is an Assistant Professor at School of Science (SOS), 
-              Noida International University, Yamuna Expy, Sector 17A, Uttar Pradesh, India. She has a bachelor’s degree in
-              computer applications from CCSU, Meerut (UP).  She has completed her post-graduation in Master of Computer Applications 
-              from AKTU, Lucknow (UP) and Ph.D. in (IT) from Amity University, Noida, Uttar Pradesh. She has one years of teaching and 
-              research experience. Her area of research includes Software Defined Networking (SDN),
-              Blockchain, Internet of Things, Networking, and security.
-              With deep interest in the field of computer science, she has a penchant for teaching IT Subjects.  Her core areas of interest lie 
-              in Knowledge Management, Learning Analytics, Information Systems.  She has publications in various international and national journals of repute.  </span>
-              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
-                x-text="show ? 'show less' : '..read more'"></button>
-            </p>
-          </div>
-        </div>
-        <div class="m-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-auto md:h-36 w-full object-cover object-center" src="assets/images/nija.jpg" alt="photo">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Mentor</h2>
-            <h1 class="title-font text-lg font-medium text-white mb-3">Dr. Nija Mani</h1>
-            <p class="show-toggle" x-data="{ show: false, maxLength: 220, text: '', content: '' }"
-              x-init="text = $el.firstElementChild.textContent.trim(); content = text.slice(0, maxLength)">
-              <span x-text="show ? text : content">Dr. Nija Mani As an educator, I find profound fulfilment in helping
-                students unlock the mysteries of numbers, equations, and the beauty that lies within ,mathematical
-                concepts. I have the privilege of guiding students through the fascinating journey of mathematical
-                discovery. I'm always eager to connect with fellow educators, students, or anyone passionate about the
-                transformative power of mathematics education.</span>
-              <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
-                x-text="show ? 'show less' : '..read more'"></button>
-            </p>
-  
-          </div>
-        </div>
+        
       </div>
   
     </section>

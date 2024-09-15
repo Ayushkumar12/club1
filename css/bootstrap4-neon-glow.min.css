@@ -91,7 +91,8 @@ h6 {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    color: whitesmoke;
 }
 
 abbr[data-original-title],
@@ -5952,7 +5953,9 @@ a.badge-dark:focus {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    height:100dvh;
+    overflow: hidden;
+    align-items: center;
+    height: 100dvh;
 }
 
 @media (min-width:576px) {

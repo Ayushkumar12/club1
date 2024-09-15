@@ -14,10 +14,16 @@
   margin-bottom: .35rem;
   font-weight: 200;
   font-family: 'Times New Roman', Times, serif;
+}.bio1 {
+  font-weight: 200;
+  margin-bottom: 1.75rem;
+  
 }
 .bio {
   font-weight: 200;
   margin-bottom: 1.75rem;
+  display:none;
+
 }
 /* for founder */
 .card1{

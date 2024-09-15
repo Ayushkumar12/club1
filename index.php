@@ -85,7 +85,7 @@
     <div id="preloader">
     </div>
 
-    <div >
+    <div id="main">
         <div class="glitch">
             <div class="glitch__img"></div>
             <div class="glitch__img"></div>
@@ -119,7 +119,7 @@
 
                     <div class="col-lg-12">
                         <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter">
-                            <h4><a href='About'>About Us</a></h4>
+                            <h4><a href='about' style="color: #ef121b;">About Us</a></h4>
                         </button>
                         <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter">
                             <h4>Join</h4>
@@ -139,16 +139,6 @@
         crossorigin="anonymous"></script>
     <script src="js/timer2.js"></script>
     <script src="js/preloader.js"></script>
-    
-    <!-- AOS script -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset:200,
-            once: false,
-            easing: 'ease-in-out'
-        });
-    </script>
 </body>
 </html>
 <?php
