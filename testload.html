@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+</head>
+<style>
+    .loading{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .load{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        border-radius: 50%;
+        animation: load 5s  cubic-bezier(1, 0.08, 0, 0.79) alternate;
+        background: linear-gradient(41deg, rgba(22,22,22,1) 0%, #03045e 35%, rgba(0,0,0,1) 100%);
+    }
+    @keyframes load {
+        0%{
+            scale: 0.05;
+            transform-origin: top;
+        }
+        25%{
+            scale: 0.05;
+            transform-origin: bottom;
+
+        }
+        50%{
+            scale: 0.05;
+            transform-origin: center;
+        }
+        70%{
+            scale: 0.1;
+            transform-origin: center;
+        }
+        90%{
+            scale: 0.15;
+            transform-origin: center;
+        }
+        100%{
+            scale: 1.5;
+            transform-origin: center;
+        }
+    }
+</style>
+<body>
+    <section class="loading">
+        <div class="load"> </div>
+    </section>
+</body>
+</html>

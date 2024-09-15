@@ -1,0 +1,255 @@
+/* animation link */
+.lineUp:nth-child(1){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 5s;
+}.lineUp:nth-child(2){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 6s;
+}.lineUp:nth-child(3){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 7s;
+}.lineUp:nth-child(4){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 8s;
+}.lineUp:nth-child(5){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 9s;
+}.lineUp:nth-child(6){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 10s;
+}.lineUp:nth-child(7){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 11s;
+}.lineUp:nth-child(8){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 12s;
+}.lineUp:nth-child(9){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 11s;
+}.lineUp:nth-child(10){
+	animation: 1s linear anim-lineUp both;
+	animation-delay: 14s;
+}
+@keyframes anim-lineUp {
+	0% {
+		opacity: 0;
+		transform: translateY(-80%);
+	}
+	20% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(-80%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+/* link hover animation */
+.content {
+	display: grid;
+	width: 100%;
+	max-width: 1300px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	justify-content: center;
+	list-style: none;
+}
+
+.content__item {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.content__item::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	border: none;
+	padding: 10px;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.button-nav {
+	overflow: hidden;
+	font-family: freight-display-pro, serif;
+	font-size: 1.15rem;
+	border-radius: 0.85rem;
+	color: #fff;
+}
+
+.button-nav span {
+	display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.button-nav:hover span {
+	animation: MoveScaleUpInitial 0.3s forwards, MoveScaleUpEnd 0.3s forwards 0.3s;
+	color: black;
+}
+
+@keyframes MoveScaleUpInitial {
+	to {
+		transform: translate3d(0,-105%,0) scale3d(1,2,1);
+		opacity: 0;
+	}
+}
+
+@keyframes MoveScaleUpEnd {
+	from {
+		transform: translate3d(0,100%,0) scale3d(1,2,1);
+		opacity: 0;
+	}
+	to {
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+
+.button-nav::before {
+	content: '';
+	background-color: #0077b6;
+	width: 120%;
+	height: 0;
+	padding-bottom: 120%;
+	top: -110%;
+	left: -10%;
+	border-radius: 50%;
+	transform: translate3d(0,68%,0) scale3d(0,0,0);
+}
+
+.button-nav:hover::before {
+	transform: translate3d(0,0,0) scale3d(1,1,1);
+	transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.button-nav::after {
+	content: '';
+	background-color: #0077b6;
+	color: #000000;
+	transform: translate3d(0,-100%,0);
+	transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.button-nav:hover::after {
+	transform: translate3d(0,0,0);
+	transition-duration: 0.05s;
+	transition-delay: 0.4s;
+	transition-timing-function: linear;
+}
+
+		
+		
+
+/* animation jion button */
+.button-jion {
+	font-size: 1.15rem;
+	color: #f0f0f0;
+	background: none;
+	width: 150px;
+	padding: 0;
+}
+
+.button-jion .button__bg {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #254997;
+	border-radius: 50px;
+	overflow: hidden;
+	transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.button-jion:hover .button__bg {
+	transform: scale3d(1.2,1.2,1);
+}
+
+.button-jion .button__bg::before,
+.button-jion .button__bg::after {
+	content: '';
+	position: absolute;
+	background: #000;
+}
+.button-jion:hover{
+	color: #ffd60a;
+
+}
+
+.button-jion .button__bg::before {
+	width: 110%;
+	height: 0;
+	padding-bottom: 110%;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	transform: translate3d(-50%,-50%,0) scale3d(0,0,1);
+}
+
+.button-jion:hover .button__bg::before {
+	transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+	transform: translate3d(-50%,-50%,0) scale3d(1,1,1);
+}
+
+.button-jion .button__bg::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.button-jion:hover .button__bg::after {
+	opacity: 1;
+	transition-duration: 0.01s;
+	transition-delay: 0.3s;
+}
+
+.button-jion span {
+	display: block;
+	position: relative;
+	padding: 10px;
+}
+/* event hover animation */
+.link:hover {
+	animation: link 1s ease-in-out linear;
+  }
+  
+  @keyframes link {
+	from {
+	  transform: scale(1);
+	}
+	to {
+	  transform: scale(2);
+	}
+  }

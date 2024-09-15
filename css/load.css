@@ -1,0 +1,66 @@
+#loader{
+    background-color: lavender;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    visibility: visible;
+}
+#loader.fade-out {
+    opacity: 0;
+}
+.load{
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    animation: load 5s linear alternate;
+    background: linear-gradient(41deg, rgba(22,22,22,1) 0%, #03045e 35%, rgba(0,0,0,1) 100%);
+}
+@keyframes load {
+    0%{
+        scale: 1;
+    }
+    20%{
+        scale: 0.05;
+        border-radius: 50%;
+        transform-origin: top;
+        height: 500px;
+        width: 500px;
+        
+    }
+    30%{
+        scale: 0.05;
+        transform-origin: bottom;
+        border-radius: 50%;
+        height: 500px;
+        width: 500px;
+    }
+    50%{
+        animation-delay: 2s;
+        scale: 0.05;
+        transform-origin: center;
+        border-radius: 50%;
+        height: 500px;
+        width: 500px;
+    }
+    70%{
+        animation-delay: 2s;
+        scale: 0.1;
+        border-radius: 50%;
+        height: 500px;
+        width: 500px;
+        transform-origin: center;
+    }
+    90%{
+        animation-delay: 1s;
+        scale: 0.15;
+        border-radius: 50%;
+        height: 500px;
+        width: 500px;
+        transform-origin: center;
+    }
+    100%{
+        scale: 1.5;
+        transform-origin: center;
+    }
+}
