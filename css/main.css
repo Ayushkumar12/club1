@@ -919,9 +919,9 @@ span.fail:after {
 }
 
 @media only screen and (max-width: 480px) {
-    .glitch__img{
+    /* .glitch__img{
         background-position-x: -425px;
-    }
+    } */
     .cyber1{
         font-size: 3.5rem;
     }

@@ -90,7 +90,7 @@
                 <a href="members" class="text-white hover:underline">
 				    <span>Members</span>
                 </a>
-                <a href="about" class="text-white hover:underline">
+                <a href="about.php" class="text-white hover:underline">
                     <span>About us</span>
                 </a>
             </ul>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/animation.css">
     <!-- AOS(animation on scroll) css -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Cyberzero</title>
+    <title>About us</title>
 </head>
 
 <body class="bg-gray-950">
