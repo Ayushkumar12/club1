@@ -5,7 +5,7 @@ const timer = () => {
     let diff = finaleDate - now;
     if (diff < 0) {
         document.querySelector('.alert').style.display = 'block';
-        document.querySelector('.container').style.display = 'none';
+        document.querySelector('.container').style.display = 'block';
     }
 
     let days = Math.floor(diff / (1000 * 60 * 60 * 24));
