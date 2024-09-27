@@ -1,4 +1,4 @@
-const finaleDate = new Date("september 23, 2024 10:00:00").getTime();
+const finaleDate = new Date("september 30, 2024 10:00:00").getTime();
 
 const timer = () => {
     const now = new Date().getTime();

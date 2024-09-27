@@ -26,8 +26,8 @@
 <!-- <body class="bg-gray-950"> -->
 <body class="imgloaded">
 <div id="fadeandscale" class="well">
-        <a href= "https://lu.ma/xuc3qgn2"> 
-         <img id="pop_img" class="hidden w-[30rem]" src="assets/home/23sep.jpg" alt="#">
+        <a href= "https://lu.ma/as8sv0tv?tk=oU15sF"> 
+         <img id="pop_img" class="hidden w-[30rem]" src="assets/home/30sept2024.webp" alt="#">
         </a>
     </div>
     <script> 
@@ -86,7 +86,7 @@
     <div id="preloader">
     </div>
 
-    <div id="main">
+    <div>
         <div class="glitch">
             <div class="glitch__img"></div>
             <div class="glitch__img"></div>
@@ -120,7 +120,7 @@
 
                     <div class="col-lg-12">
                         <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter"
-                            onclick="(function(){window.location.href='https://lu.ma/xuc3qgn2'})();">
+                            onclick="(function(){window.location.href='https://lu.ma/as8sv0tv?tk=oU15sF'})();">
                             <h4>Register</h4>
                         </button>
                     </div>

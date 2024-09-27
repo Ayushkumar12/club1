@@ -1,6 +1,6 @@
- html {
-     scroll-behavior: smooth;
- }
+html {
+    scroll-behavior: smooth;
+}
 
  * {
      margin: 0;
@@ -23,7 +23,7 @@
      background-color: #101130;
      padding: 200px 0px 150px 0px;
      padding-bottom: 240px;
-     background-image: url("assets/Event/hero-bg.jpg");
+     /* background-image: url("assets/Event/hero-bg.jpg"); */
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;

@@ -38,9 +38,9 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="src/output.css">
+    <!-- <link rel="stylesheet" href="src/output.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
 </head>
 

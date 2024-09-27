@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>About us</title>
 </head>
-
+<style>
+    body > * {
+    overflow:hidden;
+}
+</style>
 <body class="bg-gray-950">
     <!-- about us  -->
     <!-- <section class="text-gray-600 body-font">

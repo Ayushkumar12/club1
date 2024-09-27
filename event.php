@@ -5,9 +5,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="//unpkg.com/alpinejs" defer></script>
   <link rel="stylesheet" href="css/events.css">
   <title>Cyberzero|Events</title>
+
+  <style>
+      [x-cloak] {
+        display: none;
+      }
+
+      :root {
+        --c-bg: snow;
+        --c-scrollbar: lightsteelblue;
+        --c-scrollbar-hover: #000;
+      }
+
+      html {
+        background-color: var(--c-bg);
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+
+      html.dark {
+        --c-bg: #050505;
+        --c-scrollbar: #111;
+        --c-scrollbar-hover: #222;
+      }
+
+      body {
+        height: 100%;
+        overflow-y: scroll;
+      }
+
+      ::selection {
+        background: #8884;
+      }
+
+      * {
+        scrollbar-color: var(--c-scrollbar) var(--c-bg);
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar:horizontal {
+        height: 6px;
+      }
+
+      ::-webkit-scrollbar-track,
+      ::-webkit-scrollbar-corner {
+        background: var(--c-bg);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--c-scrollbar);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--c-scrollbar-hover);
+      }
+    </style>
 </head>
 
 <body class="bg-gray-950">
@@ -139,16 +199,16 @@
 
     <div class="container max-w-7xl px-4">
 
-      <div class="text-center mt-16">
+      <!-- <div class="text-center mt-16">
         <h1 class="text-white text-4xl font-bold mb-8">
           Todays Speakers
         </h1>
 
-        <!-- Description -->
-        <!-- <p class="text-gray-700 text-lg font-light">
+        Description
+        <p class="text-gray-700 text-lg font-light">
             
-          </p> -->
-      </div>
+          </p>
+      </div> -->
 
 
       <div class="flex flex-wrap justify-center">
@@ -159,7 +219,7 @@
             <!-- Avatar -->
             <a href="#" class="mx-auto">
               <img class="h-64 rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                src="assets/Event//1684176195866.jpg">
+                src="assets/Event/1684176195866.jpg">
             </a>
 
             <!-- Details -->
@@ -172,7 +232,7 @@
 
               <!-- Title -->
               <div class="text-gray-700 font-light mb-2">
-               abc
+                abc
               </div>
 
               <!-- Social Icons -->
@@ -226,7 +286,7 @@
                 in the recent domain of cyber.
               </span>
               <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
-              x-text="show ? 'show less' : '..read more'"></button>
+                x-text="show ? 'show less' : '..read more'"></button>
             </p>
           </div>
         </div>
@@ -255,7 +315,7 @@
                 themselves and their organizations from cyber threats
               </span>
               <button class="show-toggle-btn text-purple-600" @click="show = !show" x-show="text.length > maxLength"
-              x-text="show ? 'show less' : '..read more'"></button>
+                x-text="show ? 'show less' : '..read more'"></button>
             </p>
 
 
@@ -276,7 +336,7 @@
 
     <section>
 
-      <div x-data="{
+    <div x-data="{
         imageGalleryOpened: false,
         imageGalleryActiveUrl: null,
         imageGalleryImageIndex: null,
@@ -317,6 +377,57 @@
         <div class="max-w-6xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view"
           style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
           <ul x-ref="gallery" id="gallery" class="grid grid-cols-2 gap-5 lg:grid-cols-5">
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/30.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/29.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/28.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/27.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/26.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/25.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/24.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/23.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/22.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/21.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/20.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/19.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/18.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/17.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/16.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+
+          <li><img x-on:click="imageGalleryOpen" src="assets/Event/15.webp"
+                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
+                alt="photo gallery image 01"></li>
+
             <li><img x-on:click="imageGalleryOpen" src="assets/Event/5.jpg"
                 class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
                 alt="photo gallery image 01"></li>
@@ -384,69 +495,13 @@
         </template>
       </div>
 
+      </div>
+
+
     </section>
-    <style>
-      [x-cloak] {
-        display: none;
-      }
-
-      :root {
-        --c-bg: snow;
-        --c-scrollbar: lightsteelblue;
-        --c-scrollbar-hover: #000;
-      }
-
-      html {
-        background-color: var(--c-bg);
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-      }
-
-      html.dark {
-        --c-bg: #050505;
-        --c-scrollbar: #111;
-        --c-scrollbar-hover: #222;
-      }
-
-      body {
-        height: 100%;
-        overflow-y: scroll;
-      }
-
-      ::selection {
-        background: #8884;
-      }
-
-      * {
-        scrollbar-color: var(--c-scrollbar) var(--c-bg);
-      }
-
-      ::-webkit-scrollbar {
-        width: 6px;
-      }
-
-      ::-webkit-scrollbar:horizontal {
-        height: 6px;
-      }
-
-      ::-webkit-scrollbar-track,
-      ::-webkit-scrollbar-corner {
-        background: var(--c-bg);
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: var(--c-scrollbar);
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: var(--c-scrollbar-hover);
-      }
-    </style>
-  </section>
+    
   <script src="js/timer.js"></script>
+
 </body>
 
 </html>

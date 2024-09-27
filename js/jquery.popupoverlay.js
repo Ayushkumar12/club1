@@ -488,10 +488,10 @@
                                 // Some "scolllock=true" popup is currently visible, leave scrolling disabled
                                 return;
                             }
-                            $body.css({
-                                overflow: 'visible',
-                                'margin-right': bodymarginright
-                            });
+                            // $body.css({
+                            //     overflow: 'visible',
+                            //     'margin-right': bodymarginright
+                            // });
                         }, 10); // 10ms added for CSS transition in Firefox which doesn't like overflow:auto
                     }
 
@@ -511,10 +511,10 @@
                             // Some "scrolllock=true" popup is currently visible, leave scrolling disabled
                             return;
                         }
-                        $body.css({
-                            overflow: 'visible',
-                            'margin-right': bodymarginright
-                        });
+                        // $body.css({
+                        //     overflow: 'visible',
+                        //     'margin-right': bodymarginright
+                        // });
                     }, 10); // 10ms added for CSS transition in Firefox which doesn't like overflow:auto
                 }
 
